@@ -1,0 +1,19 @@
+body {
+    margin: 2em;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+/*this img tag style isn't final, just temp while I set up the page right now*/
+img {
+    height: auto;
+    width: auto;
+    margin: auto;
+    max-height: 75%;
+    max-width: 75%;
+}
