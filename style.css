@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f6f6e9;
+}
+/* menu, horizontal line, accent color-- color: #7d9b76; */
+.container{
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}   
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #272727;
+    font-size: 14px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav ul li a:hover{
+    color: #7d9b76;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.row3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+}
+
+.row3 .col-1{
+    flex-basis: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.row3 .col-1 h2 {
+    text-align: center;
+}
+
+.row3 .col-1 h4 {
+    text-align: center;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+    font-family: 'Spartan', sans-serif;
+}
+.col-1 h3{
+    font-size: 30px;
+    color: #7d9b76;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color:#272727;
+    font-weight: 100;
+}
+
+.col-1 h4{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    color:#272727;
+    font-weight: 100;
+    margin: 30px 0;
+}
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color:#272727;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to right, #7d9b76, #457d58);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+
+button img {
+    width: 30px;
+    display: none;
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row1 .col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #7d9b76, #457d58);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.row2 .col-1::after {
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #7d9b76, #457d58);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2 {
+    position: relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .vector-image {
+    width: 90%;
+    max-width: 500px;
+}
+
+.social-links img{
+    height: 40px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.social-links {
+    text-align: center;
+}
+
+@media only screen and (max-width:700px){
+
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#7d9b76, #457d58);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #f6f6e9;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row1 {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .row2 {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    .row3 {
+        margin: 50px 0;
+    }
+
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-1 {
+        flex-basis: 100%;
+    }
+
+    .col-1 h2 {
+        font-size: 35px;
+    }
+
+    .col-2 .generation-logo {
+        width: 90%;
+    }
+}
+

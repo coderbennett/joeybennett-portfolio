@@ -5,81 +5,91 @@
         <!--this meta tag sets up a description for the page-->
         <meta name="description" content="Joey Bennett's professional portfolio website,
         thanks for checking it out!">
+        
         <!--this meta tag sets me as the author of this page-->
         <meta name="author" content="joey bennett">
+
         <!--this meta tag sets up keywords (not necessary)-->
         <meta name="keywords" content="Portfolio, Developer, Front-End">
+
         <!--this meta tag allows the viewport to scale to the device width-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!--the title tag will show on the tab in your browser-->
         <title>Joey Bennett</title>
-        <!--this link tag connects the html with bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!--google font links for Fira+Sans & Spartan-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Spartan:wght@600&display=swap" rel="stylesheet">
+        <!--end of google font links-->
+
         <!--this link tag connects to the corresponding css file-->
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="certifications.html">Certifications</a>
-                </li>
-            </ul>
-
+            <div class="container">
+                <div class="navbar">
+                    <img src="images/joey-logo.png" class="logo">
+                    <nav>
+                        <ul id="menuList">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="certifications.html">Certifications</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/menu-icon.png" class="menu-icon" onclick="toggleMenu()">
+                </div>
+            </div>
         </header>
         <main>
             <!--first section-->
-            <section>
-                <div class="row">
-                    <div class="col-6">
-                        <h1>Your Cake Store</h1>
-                        <p>Through the Jr. Web Developer program at Generation USA,
-                             I led a team of training web developers to create a
-                              website for a small cake store owner.</p>
-                    </div>
-                    <div class="col-6">
-                        <img src="">
-                    </div>
+            <div class="row1">
+                <div class="col-1">
+                    <h2>Your Cake Store</h2>
+                    <h4>Through the Jr. Web Developer program at Generation USA,
+                        I led a team of training web developers to create a
+                         website for a small cake store owner.</h4>
                 </div>
-            </section>
+                <div class="col-2">
+                    <a href="https://coderbennett.github.io/yourcakestore_project/" target="_blank"><img src="images/cake.svg" class="vector-image"></a>
+                </div>
+            </div>
 
             <!--second section-->
-                <div class="row">
-                    <div class="col-6">
-                        <img src="">
-                    </div>
-                    <div class="col-6">
-                        <h1>Project ASTEROID</h1>
-                        <p>My first fully developed game. It is a simple tower defense 
-                            game where you protect Earth from asteroids and gather resources 
-                            from asteroids you place in orbit.</p>
-                    </div>
+            <div class="row2">
+                <div class="col-2">
+                    <a href="https://github.com/coderbennett/Project-ASTEROID" target="_blank"><img src="images/asteroid.svg" class="vector-image"></a>
                 </div>
+                <div class="col-1">
+                    <h2>Project ASTEROID</h2>
+                    <h4>My first fully developed game. It is a simple tower defense 
+                        game where you protect Earth from asteroids and gather resources 
+                        from asteroids you place in orbit.</h4>
+                </div>
+            </div>
 
-                <!--third section-->
-                <section>
-                    <div class="row">
-                        <div class="col-6">
-                            <h1>Plant Helper</h1>
-                            <p>I am a plant lover and as a fun 
-                                aside project I have compiled information and 
-                                tips on plants onto this website!</p>
-                        </div>
-                        <div class="col-6">
-                            <img src="">
-                        </div>
-                    </div>
-                </section>
+            <!--third section-->
+            <div class="row1">
+                <div class="col-1">
+                    <h2>Plant Helper</h2>
+                    <h4>I am a plant lover and as a fun 
+                        aside project I have compiled information and 
+                        tips on plants onto this website!</h4>
+                </div>
+                <div class="col-2">
+                    <a href="" target="_blank"><img src="images/plant.svg" class="vector-image"></a>
+                </div>
+            </div>
         </main>
         <footer>
-            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/joey-bennett-jkb/" target="_blank"><img src="images/linkedin-logo.svg"></a>
+                <a href="https://github.com/coderbennett" target="_blank"><img src="images/github-logo.svg"></a>
+            </div>
         </footer>
+        <!--link script file to page-->
+        <script src="scripts.js"></script>
     </body>
 </html>
